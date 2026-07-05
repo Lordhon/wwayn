@@ -1,13 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-/**
- * WWAYN° SHOP — immersive designer landing page
- * Стек: React + Tailwind (Vite)
- *
- * КУДА КЛАСТЬ ФОТО:
- * public/products/ink-front.jpg  (и т.д. — см. пути ниже в PRODUCTS)
- * public/video/hero.mp4
- */
+
 
 const PRODUCTS = [
   {
@@ -95,7 +88,7 @@ function ProductCard({ product, index }) {
           <img src={product.back} alt={`${product.name} back`} className="w-full h-full object-cover" />
         </div>
 
-        {/* garment tag */}
+   
         <div
           className="mono absolute top-3.5 -right-px text-[10px] tracking-wide px-2.5 py-1 z-10 text-[#0b0b0c]"
           style={{
@@ -218,7 +211,7 @@ export default function WwaynShop() {
         </div>
       </section>
 
-      {/* PRODUCTS */}
+  
       <section id="shop" className="px-10">
         <div className="max-w-[1280px] mx-auto flex justify-between items-end pt-28 pb-12 border-b border-[var(--line)]">
           <h2 className="font-display uppercase tracking-wide text-[clamp(28px,4vw,50px)]">Selected pieces</h2>
@@ -232,7 +225,6 @@ export default function WwaynShop() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="max-w-[1280px] mx-auto px-10 pt-10 pb-10 border-t border-[var(--line)] flex flex-col md:flex-row justify-between items-start md:items-end gap-5">
         <div className="font-display text-[15px] tracking-wide">WWAYN° SHOP</div>
         <div className="flex gap-6 text-[11px] uppercase tracking-widest text-[var(--bone-dim)]">
